@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding Invitation 💍</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+
+/* ===== NAV ===== */
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:center;
+gap:25px;
+padding:15px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+opacity:0.7;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ff4d6d;
+opacity:1;
+}
+
+/* ===== SECTION FIX ===== */
+section{
+min-height:100vh;
+width:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:90px 20px;
+position:relative;
+overflow:hidden;
+}
+
+/* IMAGE BG */
+.bg{
+position:absolute;
+inset:0;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+transform:scale(1.05);
+filter:brightness(0.45);
+z-index:-2;
+}
+
+/* VIDEO BG */
+.video-bg{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+object-position:center;
+filter:brightness(0.45);
+z-index:-2;
+}
+
+/* OVERLAY */
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.35);
+z-index:-1;
+}
+
+/* TEXT STYLE */
+.hero h1{
+font-size:70px;
+font-family:'Great Vibes',cursive;
+color:#ffb6c1;
+text-shadow:0 0 25px #ff4d6d;
+}
+
+.hero p{
+opacity:0.8;
+margin-top:10px;
+}
+
+.title{
+font-family:'Great Vibes',cursive;
+font-size:45px;
+color:#ff4d6d;
+margin-bottom:20px;
+}
+
+.story{
+max-width:700px;
+line-height:1.8;
+opacity:0.9;
+}
+
+/* CARD */
+.eventBox{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:20px;
+}
+
+.card{
+width:280px;
+padding:20px;
+border-radius:15px;
+background:rgba(255,255,255,0.06);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.12);
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+width:90%;
+max-width:900px;
+}
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:15px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* INPUT */
+input,textarea{
+width:100%;
+padding:10px;
+margin:6px 0;
+border-radius:10px;
+border:none;
+outline:none;
+}
+
+/* BUTTON */
+button{
+padding:10px 20px;
+border:none;
+border-radius:30px;
+background:#ff4d6d;
+color:white;
+cursor:pointer;
+}
+
+/* MUSIC BUTTON */
+.musicBtn{
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+}
+
+/* COUNTDOWN */
+.countdownBox{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:20px;
+}
+
+.time{
+padding:20px;
+border-radius:15px;
+background:rgba(255,255,255,0.07);
+backdrop-filter:blur(10px);
+min-width:100px;
+}
+
+.time h3{
+font-size:30px;
+color:#ff4d6d;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<a href="#home">Home</a>
+<a href="#story">Story</a>
+<a href="#album">Album</a>
+<a href="#love">Love</a>
+<a href="#countdown">Countdown</a>
+<a href="#kisah">Kisah Kita</a>
+</nav>
+
+<!-- PAGE 1 -->
+<section id="home" class="hero">
+<div class="bg" style="background-image:url('bg.jpg')"></div>
+<div class="overlay"></div>
+
+<h1>Ayy & Evan 💍</h1>
+<p>23 April 2023</p>
+</section>
+
+<!-- PAGE 2 -->
+<section id="story">
+
+<video class="video-bg" autoplay muted loop playsinline>
+<source src="video1.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<h2 class="title">Our Love Story 💌</h2>
+
+<p class="story">
+Dari pertemuan sederhana, kita tumbuh menjadi kisah cinta yang tidak akan pernah berakhir ❤️
+</p>
+
+<div class="eventBox">
+<div class="card">
+<h3>Akad Nikah</h3>
+<p>📅 12 Juni 2026</p>
+<p>🕘 09:00 WIB</p>
+<p>📍 Lokasi Akad</p>
+</div>
+
+<div class="card">
+<h3>Resepsi</h3>
+<p>📅 12 Juni 2026</p>
+<p>🕒 13:00 WIB</p>
+<p>📍 Gedung Wedding</p>
+</div>
+</div>
+
+</section>
+
+<!-- PAGE 3 -->
+<section id="album">
+
+<video class="video-bg" autoplay muted loop playsinline>
+<source src="video2.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<h2 class="title">Our Memories 📸</h2>
+
+<div class="gallery">
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+</div>
+
+<br>
+
+<h2 class="title">Pesan 💌</h2>
+
+<div style="max-width:400px;width:90%;">
+<input placeholder="Nama Kamu">
+<input placeholder="Kesan">
+<textarea placeholder="Pesan"></textarea>
+<button onclick="alert('RSVP terkirim 💖')">Kirim</button>
+</div>
+
+</section>
+
+<!-- PAGE 4 -->
+<section id="love">
+
+<video class="video-bg" autoplay muted loop playsinline>
+<source src="video3.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<h2 class="title">Love Quote 💖</h2>
+
+<p class="story">
+“Cinta bukan tentang menemukan seseorang yang sempurna,  
+tapi tentang belajar mencintai dengan sempurna.” 💍❤️
+</p>
+
+</section>
+
+<!-- PAGE 5 -->
+<section id="countdown">
+
+<video class="video-bg" autoplay muted loop playsinline>
+<source src="video4.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<h2 class="title">Countdown ⏳</h2>
+
+<div class="countdownBox">
+
+<div class="card">
+<h3 id="days">0</h3>
+<p>Hari</p>
+</div>
+
+<div class="card">
+<h3 id="hours">0</h3>
+<p>Jam</p>
+</div>
+
+<div class="card">
+<h3 id="minutes">0</h3>
+<p>Menit</p>
+</div>
+
+<div class="card">
+<h3 id="seconds">0</h3>
+<p>Detik</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PAGE5 / KISAH KITA -->
+<section id="kisah">
+
+<video class="video-bg" autoplay muted loop playsinline>
+<source src="video5.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<h2 class="title">Kisah Kita 💞</h2>
+
+<p class="story">
+Berawal dari sebuah pertemuan sederhana yang tidak disengaja,  
+kita saling mengenal tanpa pernah menyangka akan sejauh ini ❤️
+
+<br><br>
+
+Dari chat kecil setiap hari, tawa sederhana, hingga cerita panjang yang tidak pernah selesai,  
+perlahan kita tumbuh menjadi satu cerita yang sama.
+
+<br><br>
+
+Tidak selalu mudah, tidak selalu sempurna…  
+tapi kita selalu memilih untuk bertahan, bersama 🤍
+
+<br><br>
+
+Dan hari ini, kita menulis bab baru dari kisah yang tidak ingin kita akhiri 💍✨
+</p>
+
+</section>
+
+<!-- MUSIC -->
+<audio id="music" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button class="musicBtn" onclick="toggleMusic()">🎵 Music</button>
+
+<script>
+let music=document.getElementById("music");
+let play=false;
+
+function toggleMusic(){
+if(!play){
+music.play();
+play=true;
+}else{
+music.pause();
+play=false;
+}
+}
+
+/* COUNTDOWN */
+let weddingDate = new Date("Jun 12, 2026 09:00:00").getTime();
+
+setInterval(()=>{
+let now = new Date().getTime();
+let distance = weddingDate - now;
+
+document.getElementById("days").innerText=Math.floor(distance/(1000*60*60*24));
+document.getElementById("hours").innerText=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+document.getElementById("minutes").innerText=Math.floor((distance%(1000*60*60))/(1000*60));
+document.getElementById("seconds").innerText=Math.floor((distance%(1000*60))/1000);
+},1000);
+
+/* auto play music */
+window.addEventListener("click",()=>{
+music.play();
+play=true;
+},{once:true});
+</script>
+
+</body>
+</html>
